@@ -66,6 +66,69 @@
   font-display: swap;
 }
 
+@keyframes signNav {
+  from {
+    height: 0;
+  }
+  to {
+    height: 30px;
+  }
+}
+
+@keyframes underlineHub {
+  from {
+    width: 0;
+  }
+  to {
+    width: 87px;
+  }
+}
+
+@keyframes underlineIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 110px;
+  }
+}
+
+@keyframes upAndDownArrowCv {
+  0% {
+    background-position: 70px 25px;
+  }
+  10% {
+    background-position: 70px 20px;
+  }
+  20% {
+    background-position: 70px 30px;
+  }
+  30% {
+    background-position: 70px 25px;
+  }
+  40% {
+    background-position: 70px 25px;
+  }
+  50% {
+    background-position: 70px 25px;
+  }
+  60% {
+    background-position: 70px 25px;
+  }
+  70% {
+    background-position: 70px 25px;
+  }
+  80% {
+    background-position: 70px 25px;
+  }
+  90% {
+    background-position: 70px 25px;
+  }
+  100% {
+    background-position: 70px 25px;
+  }
+}
+
 :root {
   --primary-color: #ebebeb;
   --secondary-color: #e63946;
@@ -194,9 +257,10 @@ ul {
   left: 8.5%;
 
   width: 5px;
-  height: 30px;
 
   background-color: var(--secondary-color);
+
+  animation: signNav 3s forwards;
 }
 
 .navigation__item {
@@ -323,9 +387,10 @@ ul {
   z-index: 1;
 
   height: 5px;
-  width: 17px;
 
   background-color: var(--button-color);
+
+  animation: underlineHub 3s forwards;
 }
 
 .footer__link--in::before {
@@ -337,9 +402,10 @@ ul {
   z-index: 1;
 
   height: 5px;
-  width: 17px;
 
   background-color: var(--button-color);
+
+  animation: underlineIn 3s forwards;
 }
 
 .footer__link {
@@ -382,11 +448,12 @@ ul {
   background-color: var(--button-color);
   background-image: url(assets/img/arrow_download.svg);
   background-size: 27px 30px;
-  background-position: 70px 25px;
   box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.25);
 
   outline: none;
   cursor: pointer;
+
+  animation: upAndDownArrowCv 3s forwards ease infinite;
 }
 
 .footer__button:hover,
